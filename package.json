@@ -1,0 +1,30 @@
+{
+  "name": "mesto-pakege",
+  "version": "1.0.0",
+  "description": "### Mesto - проектная работа с использованием JavaScript. Сайт выполнен в виде страницы пользователя, которая содержит карточки, места путешествий, где побывал пользователь.Страница интерактивная, позволяет вводить свои данные в выведенную форму.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && webpack --mode development",
+    "start": "webpack serve --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "cssnano": "^5.1.15",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

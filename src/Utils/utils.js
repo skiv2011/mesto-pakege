@@ -1,30 +1,38 @@
 export const popupImage = document.querySelector('.popup_type_image');
 export const popupPhoto = document.querySelector('.popup__photo');
 export const popupImageTitle = document.querySelector('.popup__image-title');
+const maldivesbBeach = new URL ('../images/item1.jpg',import.meta.url);
+const indianOcean = new URL('../images/item2.jpg',import.meta.url);
+const RainForest = new URL('../images/item3.jpg',import.meta.url);
+const FrenchPolynesia = new URL('../images/item4.jpg',import.meta.url);
+const CoteAzur = new URL('../images/item5.jpg',import.meta.url);
+const DominicanRepublic = new URL('../images/item6.jpg',import.meta.url);
+
 export const initialCards = [
   {
     name: 'Пляж Мальдивы',
-    link: 'images/item1.jpg',
+    link: maldivesbBeach
   },
   {
     name: 'Индийский Океан',
-    link: 'images/item2.jpg'
+    link: indianOcean
   },
   {
     name: 'Тропический лес',
-    link: 'images/item3.jpg'
+    link:  RainForest
+
   },
   {
     name: 'Французская Полинезия',
-    link: 'images/item4.jpg'
+    link: FrenchPolynesia
   },
   {
     name: 'Лазурный берег',
-    link: 'images/item5.jpg'
+    link: CoteAzur
   },
   {
     name: 'Доминиканская республика',
-    link: 'images/item6.jpg'
+    link: DominicanRepublic
   }
 ];
 

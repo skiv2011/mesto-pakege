@@ -1,6 +1,7 @@
-import { Card } from './Card.js';
-import { FormValidator } from './FormValidator.js';
-import { openPopup, closePopup, dataBlock, initialCards, enableValidation } from './utils.js';
+import './index.css';
+import { Card } from '../components/Card.js';
+import { FormValidator } from '../components/FormValidator.js';
+import { openPopup, closePopup, dataBlock, initialCards, enableValidation } from '../Utils/utils.js';
 
 const buttonEdit = document.querySelector('.profile__edit-button');
 const buttonAdd = document.querySelector('.profile__add-button');
