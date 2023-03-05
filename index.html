@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pages/index.css">
+  <title>Mesto</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <img src="images/logo.svg" alt="Логотип сайта" class="header__logo">
+    </header>
+
+    <main class="main">
+      <section class="profile">
+        <div class="profile__user">
+          <img src="images/avatar.jpg" alt="фото пользователя" class="profile__avatar">
+          <div class="profile__info">
+            <h1 class="profile__title">Жак-Ив Кусто</h1>
+            <button aria-label="Редактировать" class="profile__edit-button" type="button"></button>
+            <p class="profile__subtitle">Исследователь океана</p>
+          </div>
+        </div>
+        <button aria-label="Добавить" class="profile__add-button" type="button"></button>
+      </section>
+
+      <section class="elements">
+        <ul class="element">
+
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2022 Mesto Russia Жуковский Павел</p>
+    </footer>
+  </div>
+
+  <div class="popup popup_type_edit">
+    <div class="popup__container">
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <form class="popup__form popup__form-edit" name="profile" novalidate>
+        <fieldset class="popup__field">
+          <input type="text" class="popup__decription popup__decription_type_name" name="name" id="input-name"
+            placeholder="имя" minlength="2" maxlength="40" value required>
+          <span class="popup__error" id="input-name-error"></span>
+          <input type="text" class="popup__decription popup__decription_type_job" name="job" id="input-job"
+            placeholder="о себе" minlength="2" maxlength="200" value required>
+          <span class="popup__error" id="input-job-error"></span>
+          <button aria-label="Сохранить" type="submit" class="popup__submit-button">Сохранить</button>
+        </fieldset>
+      </form>
+      <button aria-label="Закрыть" class="popup__close-button" type="button"></button>
+    </div>
+  </div>
+
+  <div class="popup popup_type_add">
+    <div class="popup__container">
+      <h2 class="popup__title">Новое место</h2>
+      <form class="popup__form popup__form-add" name="add-plase" novalidate>
+        <fieldset class="popup__field">
+          <input type="text" class="popup__decription popup__decription_type_title" name="title" id="input-title"
+            placeholder="Название" minlength="2" maxlength="30" value required>
+          <span class="popup__error" id="input-title-error"></span>
+          <input type="url" class="popup__decription popup__decription_type_link" name="link" id="input-link"
+            placeholder="Ссылка на картинку" value required>
+          <span class="popup__error" id="input-link-error"></span>
+          <button aria-label="Создать" type="submit" class="popup__submit-button" disabled>Создать</button>
+        </fieldset>
+      </form>
+      <button aria-label="Закрыть" class="popup__close-button" type="button"></button>
+    </div>
+  </div>
+
+  <div class="popup popup_type_image">
+    <div class="popup__container-img">
+      <button aria-label="Закрыть" class="popup__close-button" type="button"></button>
+      <img class="popup__photo">
+      <p class="popup__image-title"></p>
+    </div>
+  </div>
+
+  <template class="cards">
+    <li class="element__card">
+      <img class="element__image">
+      <div class="element__discription">
+        <h2 class="element__subtitle"></h2>
+        <button aria-label="Лайк" class="element__button-like" type="button"></button>
+      </div>
+      <button aria-label="Удалить" class="element__button-delete" type="button"></button>
+    </li>
+  </template>
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>
